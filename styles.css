@@ -400,6 +400,40 @@ skills-name{
 
 }
 
+/* project section */
+
+.work-container{
+    grid-template-columns: repeat(3,1fr);
+}
+.work-card{
+    position: relative;
+    cursor: pointer;
+}
+.work-img{
+    height: 280px;
+    width: 500px;
+    vertical-align: middle;
+}
+.work-detail{
+    position: absolute;
+    inset: 0;
+    background-color: hsla(0, 0%, 0%, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.work-img,.work-detail{
+    border-radius: .5rem;    
+}
+.work-title,.work-description{
+    color: var(--white-color);
+    transform: translateY(1.5rem);
+}
+.work-description{
+    font-size:var(--normal-font-size);
+    text-align: center;
+}
 
 
 
