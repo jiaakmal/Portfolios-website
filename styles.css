@@ -417,23 +417,75 @@ skills-name{
 .work-detail{
     position: absolute;
     inset: 0;
-    background-color: hsla(0, 0%, 0%, 0.05);
+    background-color: rgba(0,0,0,.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
 }
 .work-img,.work-detail{
     border-radius: .5rem;    
 }
 .work-title,.work-description{
     color: var(--white-color);
-    transform: translateY(1.5rem);
+    transform: translateY(-0.5rem);
+    margin-bottom: 1.2rem;
 }
 .work-description{
     font-size:var(--normal-font-size);
     text-align: center;
 }
+.work-card:hover .work-detail{
+    opacity: 1;
+    transition: opacity .5s ease;
+}
 
 
+/* contact styling */
 
+.contact-container{
+    grid-template-columns: 5fr 7fr;
+    align-items: flex-start;
+
+}
+.contact-item{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.25rem;
+}
+.contact-item:not(:last-child){
+    margin-bottom: 2.5rem;
+}
+.contact-icon{
+    font-size: var(--normal-font-size);
+    color: var(--first-color);
+    line-height: 1.8;
+}
+.contact-title,.contact-data{
+    font-size: var(--normal-font-size);
+}
+.form-group{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:1.25rem ;
+}
+.input-control{
+    color: var(--title-color);
+    background-color: var(--container-color);
+    padding: 1rem .75rem;
+    border:1px solid transparent;
+    border-radius: .5rem;
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+.input-control::placeholder{
+    color: var(--text-color);
+}
+.textarea{
+    resize: none;
+    height: 150px;
+}
+.contact-btn{
+    float: right;
+}
