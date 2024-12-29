@@ -15,8 +15,14 @@
   </head>
   <body>
     <header class="header">
+      
       <nav class="nav container">
         <a href="index.html" class="logo">JawariaAzhar</a>
+        <input type="checkbox" id="nav-toggler" style="opacity: 0;" />
+      <label for="nav-toggler" class="nav-toggle">
+        
+        <i class="fas fa-bars"></i>
+      </label>
         <ul class="nav-list">
           <li class="nav-item">
             <a href="#home" class="nav-link active-link">Home</a>
@@ -35,6 +41,7 @@
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
+      
       </nav>
     </header>
     <main>
@@ -62,7 +69,7 @@
       <section class="about section" id="about">
         <div class="about-container container grid">
           <div class="about-image">
-            <img src="images/home-img1.png" alt="img-2" class="about-img" />
+            <img src="images/home-img1.png" alt="img-2" class="about-img"  />
           </div>
           <div class="about-content">
             <h1 class="section-title" data-title="Who am I?">
@@ -423,6 +430,27 @@
 
     </main>
 
-    <footer>                    footer abi rehta ha</footer>
+    <footer class="footer">
+      <div class="footer-container container">
+        <p class="footer-copyright">
+          &copy; 2021 Jawaria Azhar. All rights reserved.
+        </p>
+
+        <div class="footer-social-links">
+          <a href="#" class="footer-social-link"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" class="footer-social-link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="footer-social-link"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="footer-social-link"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
